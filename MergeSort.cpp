@@ -1,6 +1,9 @@
 #include <iostream>
+#include <vector>
 using namespace std;
+
 //TIME COMPLEXITY = O(nlogn)
+
 void conquer(vector<int>& arr,int low,int mid,int high)
     {
         vector<int> merged(high - low + 1);
@@ -50,12 +53,13 @@ void conquer(vector<int>& arr,int low,int mid,int high)
     }
 
 int main(){
-    int arr[]={6,3,9,5,2,8};
+    vector<int> arr = {6, 3, 9, 5, 2, 8};
     int n=arr.size();
-    MergeSort(arr,0,n-1);
+    mergeSort(arr,0,n-1);
     //print
     for(int i=0;i<n;i++)
     {
         cout<<arr[i]<<" ";
     }
+    return 0;
 }
