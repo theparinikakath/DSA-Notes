@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//TIME COMPLEXITY = O(nlogn)
 void conquer(vector<int>& arr,int low,int mid,int high)
     {
         vector<int> merged(high - low + 1);
